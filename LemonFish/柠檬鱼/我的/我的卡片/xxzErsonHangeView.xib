@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Qw3-H6-HwY" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="i7h-QP-E6D" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lbg-jM-aUH" customClass="xxzErsonHangeView">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="124"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhengmianfanmianCollectionviewMin" translatesAutoresizingMaskIntoConstraints="NO" id="7YP-0L-YzR">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="63.98" id="mP7-Bv-OF3"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13H-IF-xvf">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GA-wy-nhL">
+                            <rect key="frame" x="16" y="5" width="39" height="39"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="cardXiaofeidiqvTemp"/>
+                            <connections>
+                                <action selector="backAction:" destination="lbg-jM-aUH" eventType="touchUpInside" id="UZs-Uh-IhR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡片管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCq-62-8Dj">
+                            <rect key="frame" x="149.5" y="14" width="73.5" height="21.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj8-Wj-0ux">
+                            <rect key="frame" x="326" y="9.5" width="30" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30.01" id="T3u-RU-wxD"/>
+                                <constraint firstAttribute="width" constant="29.99" id="o1P-fL-Nzw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="register_tShoukuanren">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.98" id="aB8-8N-ZQj"/>
+                        <constraint firstItem="tCq-62-8Dj" firstAttribute="centerX" secondItem="13H-IF-xvf" secondAttribute="centerX" id="gKm-rj-iSw"/>
+                        <constraint firstItem="6GA-wy-nhL" firstAttribute="top" secondItem="13H-IF-xvf" secondAttribute="top" constant="4.98" id="FxY-5c-Am8"/>
+                        <constraint firstAttribute="trailing" secondItem="fj8-Wj-0ux" secondAttribute="trailing" constant="16.02" id="icu-6w-PWF"/>
+                        <constraint firstItem="6GA-wy-nhL" firstAttribute="leading" secondItem="13H-IF-xvf" secondAttribute="leading" constant="15.99" id="3cj-Ta-8kl"/>
+                        <constraint firstItem="tCq-62-8Dj" firstAttribute="centerY" secondItem="6GA-wy-nhL" secondAttribute="centerY" id="Hs9-ob-7jE"/>
+                        <constraint firstItem="fj8-Wj-0ux" firstAttribute="centerY" secondItem="tCq-62-8Dj" secondAttribute="centerY" id="npd-No-qCN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gte-cy-ysd">
+                    <rect key="frame" x="0.0" y="54" width="372" height="70"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lMA-Wd-y2I">
+                            <rect key="frame" x="0.0" y="10" width="372" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA3-jn-w2y">
+                                    <rect key="frame" x="0.0" y="0.0" width="186" height="60"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" 储蓄卡" image="leijishouruShort_cFriends">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" title=" 储蓄卡" image="changeimgHourDengji">
+                                        <color key="titleColor" red="0.97254901960784312" green="0.5607843137254902" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRg-fX-71B">
+                                    <rect key="frame" x="186" y="0.0" width="186" height="60"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title=" 信用卡" image="masksMainDraging">
+                                        <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <state key="selected" title=" 信用卡" image="cvnBorder">
+                                        <color key="titleColor" red="0.97254901959999995" green="0.56078431370000004" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70.01" id="CZz-bi-wF9"/>
+                        <constraint firstAttribute="bottom" secondItem="lMA-Wd-y2I" secondAttribute="bottom" id="aVj-PZ-oTR"/>
+                        <constraint firstAttribute="trailing" secondItem="lMA-Wd-y2I" secondAttribute="trailing" id="xSW-Yk-vRD"/>
+                        <constraint firstItem="lMA-Wd-y2I" firstAttribute="top" secondItem="gte-cy-ysd" secondAttribute="top" constant="9.96" id="DKk-3K-ZgY"/>
+                        <constraint firstItem="lMA-Wd-y2I" firstAttribute="leading" secondItem="gte-cy-ysd" secondAttribute="leading" id="bq6-Rn-cVd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cot-a7-V14"/>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7YP-0L-YzR" firstAttribute="leading" secondItem="cot-a7-V14" secondAttribute="leading" id="Us7-Yh-RcT"/>
+                <constraint firstItem="13H-IF-xvf" firstAttribute="leading" secondItem="cot-a7-V14" secondAttribute="leading" id="fBC-S0-Kon"/>
+                <constraint firstItem="7YP-0L-YzR" firstAttribute="trailing" secondItem="cot-a7-V14" secondAttribute="trailing" id="DlM-vF-29l"/>
+                <constraint firstItem="cot-a7-V14" firstAttribute="trailing" secondItem="gte-cy-ysd" secondAttribute="trailing" id="AEb-SR-jgG"/>
+                <constraint firstItem="13H-IF-xvf" firstAttribute="top" secondItem="lbg-jM-aUH" secondAttribute="top" id="hv1-or-nUq"/>
+                <constraint firstItem="7YP-0L-YzR" firstAttribute="top" secondItem="lbg-jM-aUH" secondAttribute="top" id="AvH-4p-nIg"/>
+                <constraint firstItem="gte-cy-ysd" firstAttribute="top" secondItem="7YP-0L-YzR" secondAttribute="bottom" constant="-10" id="GzY-BO-noR"/>
+                <constraint firstItem="13H-IF-xvf" firstAttribute="trailing" secondItem="cot-a7-V14" secondAttribute="trailing" id="Fwu-5v-Stb"/>
+                <constraint firstItem="gte-cy-ysd" firstAttribute="leading" secondItem="cot-a7-V14" secondAttribute="leading" id="QjT-o3-Nxm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addBtn" destination="fj8-Wj-0ux" id="FAM-NM-Mdd"/>
+                <outlet property="chuxukaBtn" destination="WA3-jn-w2y" id="nEL-WG-WNw"/>
+                <outlet property="navImvHeight" destination="mP7-Bv-OF3" id="CBx-S5-YYx"/>
+                <outlet property="navTitle" destination="tCq-62-8Dj" id="fSR-7c-D5Q"/>
+                <outlet property="safeTopHeight" destination="hv1-or-nUq" id="uZ9-cz-qC5"/>
+                <outlet property="xinyongkaBtn" destination="IRg-fX-71B" id="7Tm-fu-Ei4"/>
+            </connections>
+            <point key="canvasLocation" x="-645" y="102"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardXiaofeidiqvTemp" width="39" height="39"/>
+        <image name="changeimgHourDengji" width="46" height="52"/>
+        <image name="cvnBorder" width="46" height="52"/>
+        <image name="leijishouruShort_cFriends" width="41" height="41"/>
+        <image name="masksMainDraging" width="41" height="41"/>
+        <image name="register_tShoukuanren" width="39" height="39"/>
+        <image name="zhengmianfanmianCollectionviewMin" width="375" height="105"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

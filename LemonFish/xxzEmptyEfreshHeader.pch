@@ -1,0 +1,185 @@
+//
+//  PrefixHeader.pch
+//  TextDemo
+//
+//  Created by 郭龙波 on 2019/6/12.
+//  Copyright © 2019 李豪. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+/**
+ *  设备的高
+ */
+#define DEVICE_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+/**
+ *  设备的寛
+ */
+#define DEVICE_WIDTH ([UIScreen mainScreen].bounds.size.width)
+///状态高度
+#define kStatusBarHeight [UIDevice statusBarHeight]
+///导航高度
+#define kNavBarHeight 44.0
+///TabBar高度
+#define kTabBarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+///状态+导航高度
+#define kTopHeight (kStatusBarHeight + kNavBarHeight)
+///底部安全距离
+#define KBottomHeight [UIDevice bottomSafeHeight]
+/** 弱引用 */
+#ifndef weakify
+    #if DEBUG
+        #if __has_feature(objc_arc)
+        #define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+        #endif
+    #else
+        #if __has_feature(objc_arc)
+        #define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+        #endif
+    #endif
+#endif
+
+#ifndef strongify
+    #if DEBUG
+        #if __has_feature(objc_arc)
+        #define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+        #else
+        #define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+        #endif
+    #else
+        #if __has_feature(objc_arc)
+        #define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+        #else
+        #define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+        #endif
+    #endif
+#endif
+
+#define Ratio(w) ([UIScreen mainScreen].bounds.size.width/375)*w
+#define RatioH(h) ([UIScreen mainScreen].bounds.size.height/667)*h
+
+#define getBankLogo(string) [NSString stringWithFormat:@"BANK_%@",string]
+
+#define getAfterFour(string) [string substringFromIndex:string.length-4]
+
+#define isCardName(string) string.length > 4 ? [string stringByReplacingOccurrencesOfString:@"中国" withString:@""] : string
+
+#define AppendString(string,printStr) [string stringByAppendingFormat:@"%@",printStr];
+
+#define isBlankString(String) [NSString isBlankString:[NSString stringWithFormat:@"%@",String]] ? @"-" : [NSString stringWithFormat:@"%@",String]
+
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr, " %s\n",   [[[NSString alloc] initWithData:[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] dataUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding] UTF8String]?[[[NSString alloc] initWithData:[[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] dataUsingEncoding:NSUTF8StringEncoding] encoding:NSNonLossyASCIIStringEncoding] UTF8String]:[[NSString stringWithFormat: FORMAT, ## __VA_ARGS__] UTF8String]);
+#define NSFunc() NSLog(@"%s 第%d行",__func__,__LINE__);
+#else
+#define NSLog(FORMAT, ...) nil;
+#define NSFunc(...);
+#endif
+
+#define ShengJi  [xxzBase showBottomWithText:@"正在升级中"];
+
+/*
+    项目接口地址
+    商城测试 @"http://shopcs.cqhl006.cn"
+    测试 @"http://192.168.31.165:8080"
+    正式 @"http://api.zhifu168.com"
+*/
+
+#define ApiUrl @"http://api.huaiyouwo.com"
+//#define ApiUrl @"http://ccyy.free.idcfengye.com"
+
+//#define ApiUrl @"http://192.168.31.165:8080"
+
+//品牌ID 控制整个APP的品牌
+#define brandId @"18"
+
+///高德的key
+#define AMaPAppKey   @"8a4899fcace49e5d367fd671ff965c8e"
+
+///字体主题色
+#define FontThemeColor [UIColor colorWithHexString:@"#000000"]
+
+#import "xxzUnicodeController.h"
+
+//框架
+#import "xxzEgment.h"
+#import "BlocksKit+UIKit.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
+
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "LSTPopView.h"
+#import <Photos/Photos.h>
+#import "IQKeyboardManager.h"
+///当列表为空时，显示的默认图片
+#import "UIScrollView+EmptyDataSet.h"
+
+//支付宝
+#import <AlipaySDK/AlipaySDK.h>
+#import <YYKit/YYKit.h>
+//高德地图
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+
+// 引入 JPush 功能所需头文件
+#import "JPUSHService.h"
+#import <UserNotifications/UserNotifications.h>
+
+
+#import "xxzXplainView.h"
+
+//扩展类
+#import "xxzControlBack.h"
+#import "xxzEfreshDetail.h"
+#import "xxzConfirmInstitution.h"
+#import "xxzSizeHome.h"
+#import "xxzUppotMain.h"
+#import "xxzDelegateTrading.h"
+#import "xxzSuppot.h"
+#import "xxzExtendAuto.h"
+#import "xxzReateConfirm.h"
+#import "xxzErsionTabbar.h"
+#import "xxzXplain.h"
+#import "xxzSizeUppot.h"
+#import "xxzGoods.h"
+#import "xxzAnner.h"
+#import "xxzConfigNavigation.h"
+#import "xxzReate.h"
+#import "xxzEtworkingConfig.h"
+
+
+#import "AppDelegate.h"
+#import <WebKit/WebKit.h>
+//导航栏拦截
+#import "xxzXplainSection.h"
+//日期选择
+#import "xxzFriendsTouchView.h"
+//导航栏
+#import "xxzMainCardController.h"
+//提示
+#import "xxzBase.h"
+//时间选择
+#import "xxzConfirmView.h"
+//自定义地址选择
+#import "xxzLoginSettingView.h"
+//
+#import "xxzHomeNline.h"
+
+//父类
+#import "xxzSilderController.h"
+
+#import "xxzHeaderListController.h"
+#import "xxzCenterControlController.h"
+#import "xxzControlToolController.h"
+#import "xxzAggedMagnificationController.h"
+#import "xxzTableController.h"
+
+
+#endif /* PrefixHeader_pch */

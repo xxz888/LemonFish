@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Qw3-H6-HwY" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="i7h-QP-E6D" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lbg-jM-aUH" customClass="xxzLoginReateView">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhengmianfanmianCollectionviewMin" translatesAutoresizingMaskIntoConstraints="NO" id="7YP-0L-YzR">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64.02" id="mP7-Bv-OF3"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13H-IF-xvf">
+                    <rect key="frame" x="0.0" y="0.0" width="372" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6GA-wy-nhL">
+                            <rect key="frame" x="16" y="5" width="39" height="39"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="cardXiaofeidiqvTemp"/>
+                            <connections>
+                                <action selector="backAction:" destination="lbg-jM-aUH" eventType="touchUpInside" id="UZs-Uh-IhR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="花呗记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCq-62-8Dj">
+                            <rect key="frame" x="149" y="13.5" width="74" height="22"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.99" id="aB8-8N-ZQj"/>
+                        <constraint firstItem="tCq-62-8Dj" firstAttribute="centerX" secondItem="13H-IF-xvf" secondAttribute="centerX" id="gKm-rj-iSw"/>
+                        <constraint firstItem="6GA-wy-nhL" firstAttribute="top" secondItem="13H-IF-xvf" secondAttribute="top" constant="5.01" id="FxY-5c-Am8"/>
+                        <constraint firstItem="6GA-wy-nhL" firstAttribute="leading" secondItem="13H-IF-xvf" secondAttribute="leading" constant="16.02" id="3cj-Ta-8kl"/>
+                        <constraint firstItem="tCq-62-8Dj" firstAttribute="centerY" secondItem="6GA-wy-nhL" secondAttribute="centerY" id="Hs9-ob-7jE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cot-a7-V14"/>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="7YP-0L-YzR" firstAttribute="leading" secondItem="cot-a7-V14" secondAttribute="leading" id="Us7-Yh-RcT"/>
+                <constraint firstItem="13H-IF-xvf" firstAttribute="leading" secondItem="cot-a7-V14" secondAttribute="leading" id="fBC-S0-Kon"/>
+                <constraint firstItem="7YP-0L-YzR" firstAttribute="trailing" secondItem="cot-a7-V14" secondAttribute="trailing" id="DlM-vF-29l"/>
+                <constraint firstItem="13H-IF-xvf" firstAttribute="top" secondItem="lbg-jM-aUH" secondAttribute="top" id="hv1-or-nUq"/>
+                <constraint firstItem="7YP-0L-YzR" firstAttribute="top" secondItem="lbg-jM-aUH" secondAttribute="top" id="AvH-4p-nIg"/>
+                <constraint firstItem="13H-IF-xvf" firstAttribute="trailing" secondItem="cot-a7-V14" secondAttribute="trailing" id="Fwu-5v-Stb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="navImvHeight" destination="mP7-Bv-OF3" id="CBx-S5-YYx"/>
+                <outlet property="safeTopHeight" destination="hv1-or-nUq" id="uZ9-cz-qC5"/>
+            </connections>
+            <point key="canvasLocation" x="-16" y="-171.81409295352324"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardXiaofeidiqvTemp" width="39" height="39"/>
+        <image name="zhengmianfanmianCollectionviewMin" width="375" height="105"/>
+    </resources>
+</document>

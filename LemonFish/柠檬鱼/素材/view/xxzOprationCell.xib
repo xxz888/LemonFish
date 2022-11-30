@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Qw3-H6-HwY" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="i7h-QP-E6D" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="153" id="JD1-ca-MBC" customClass="xxzOprationCell">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JD1-ca-MBC" id="oZa-Ev-nq8">
+                <rect key="frame" x="0.0" y="0.0" width="409" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48t-vF-NUO">
+                        <rect key="frame" x="15" y="0.0" width="379" height="153"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wV-I9-PYd">
+                                <rect key="frame" x="15" y="152.5" width="349" height="0.5"/>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.47" id="2Bl-yd-Eqp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4wV-I9-PYd" firstAttribute="leading" secondItem="48t-vF-NUO" secondAttribute="leading" constant="14.99" id="gNU-3H-l1z"/>
+                            <constraint firstAttribute="trailing" secondItem="4wV-I9-PYd" secondAttribute="trailing" constant="14.99" id="lIM-sX-IbX"/>
+                            <constraint firstAttribute="bottom" secondItem="4wV-I9-PYd" secondAttribute="bottom" id="GZZ-Ye-IbW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="48t-vF-NUO" secondAttribute="trailing" constant="15.01" id="f4k-e4-yem"/>
+                    <constraint firstItem="48t-vF-NUO" firstAttribute="leading" secondItem="oZa-Ev-nq8" secondAttribute="leading" constant="14.99" id="D2p-fN-UQ3"/>
+                    <constraint firstItem="48t-vF-NUO" firstAttribute="top" secondItem="oZa-Ev-nq8" secondAttribute="top" id="Uvb-RO-1Sz"/>
+                    <constraint firstAttribute="bottom" secondItem="48t-vF-NUO" secondAttribute="bottom" id="hHH-r0-Y8V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="qmQ-7A-yrT"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cellDiv" destination="48t-vF-NUO" id="TbI-4r-6ij"/>
+            </connections>
+            <point key="canvasLocation" x="196.37681159420291" y="166.40625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

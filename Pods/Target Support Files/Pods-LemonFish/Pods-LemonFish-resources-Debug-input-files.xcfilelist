@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-LemonFish/Pods-LemonFish-resources.sh
+${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/QMUIKit/QMUIResources.bundle

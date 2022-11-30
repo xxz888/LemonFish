@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Qw3-H6-HwY" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="i7h-QP-E6D" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PJV-7R-tcO" customClass="xxzSizeCategoryView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDU-fB-kxQ">
+                    <rect key="frame" x="47" y="253" width="320" height="320"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divTokenJihuahuankuan" translatesAutoresizingMaskIntoConstraints="NO" id="8Rh-fe-R2C">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="8Rh-fe-R2C" secondAttribute="height" id="LBr-fI-yjR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npe-l9-cQG">
+                            <rect key="frame" x="130.5" y="90" width="59" height="23"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="复制以下微信号，添加客户好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQw-PQ-abD">
+                            <rect key="frame" x="60" y="128" width="200" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdS-Yr-pYk">
+                            <rect key="frame" x="50" y="165" width="220" height="48"/>
+                            <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48.02" id="cmG-qu-xCU"/>
+                                <constraint firstAttribute="width" constant="219.98" id="8AA-sK-OAx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="11"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wo-o6-qDU">
+                            <rect key="frame" x="50" y="233" width="220" height="48"/>
+                            <color key="backgroundColor" red="0.99607843137254903" green="0.83137254901960778" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="复制">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="11"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="copyAction:" destination="PJV-7R-tcO" eventType="touchUpInside" id="j34-2d-IwQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8Rh-fe-R2C" firstAttribute="top" secondItem="vDU-fB-kxQ" secondAttribute="top" id="V8V-aG-UyQ"/>
+                        <constraint firstItem="Npe-l9-cQG" firstAttribute="top" secondItem="vDU-fB-kxQ" secondAttribute="top" constant="89.98" id="dig-YK-XAm"/>
+                        <constraint firstAttribute="width" constant="319.98" id="ckv-bo-sdv"/>
+                        <constraint firstItem="QdS-Yr-pYk" firstAttribute="top" secondItem="MQw-PQ-abD" secondAttribute="bottom" constant="20.05" id="dnK-1t-OD5"/>
+                        <constraint firstAttribute="trailing" secondItem="8Rh-fe-R2C" secondAttribute="trailing" id="KaO-nk-5Hz"/>
+                        <constraint firstItem="2wo-o6-qDU" firstAttribute="top" secondItem="QdS-Yr-pYk" secondAttribute="bottom" constant="20.01" id="e0p-EH-o27"/>
+                        <constraint firstItem="MQw-PQ-abD" firstAttribute="top" secondItem="Npe-l9-cQG" secondAttribute="bottom" constant="15.01" id="gxN-ay-lDy"/>
+                        <constraint firstItem="QdS-Yr-pYk" firstAttribute="centerX" secondItem="8Rh-fe-R2C" secondAttribute="centerX" id="MKj-8c-4E3"/>
+                        <constraint firstItem="8Rh-fe-R2C" firstAttribute="leading" secondItem="vDU-fB-kxQ" secondAttribute="leading" id="75E-ud-pUs"/>
+                        <constraint firstItem="2wo-o6-qDU" firstAttribute="centerX" secondItem="8Rh-fe-R2C" secondAttribute="centerX" id="lJz-Th-SJp"/>
+                        <constraint firstAttribute="bottom" secondItem="8Rh-fe-R2C" secondAttribute="bottom" id="anK-KF-2Ka"/>
+                        <constraint firstItem="2wo-o6-qDU" firstAttribute="width" secondItem="QdS-Yr-pYk" secondAttribute="width" id="Vqj-e1-DXt"/>
+                        <constraint firstItem="2wo-o6-qDU" firstAttribute="height" secondItem="QdS-Yr-pYk" secondAttribute="height" id="3yn-lw-bjX"/>
+                        <constraint firstItem="Npe-l9-cQG" firstAttribute="centerX" secondItem="8Rh-fe-R2C" secondAttribute="centerX" id="XaR-hQ-OJv"/>
+                        <constraint firstItem="MQw-PQ-abD" firstAttribute="centerX" secondItem="8Rh-fe-R2C" secondAttribute="centerX" id="hSI-TR-wbQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLT-Ls-fgo">
+                    <rect key="frame" x="192" y="593" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30.05" id="9lN-XU-fia"/>
+                        <constraint firstAttribute="width" constant="29.99" id="8E9-iT-5Qe"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="window_yrJihuajineYitixian"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="gDk-Ol-Vkw"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vDU-fB-kxQ" firstAttribute="centerX" secondItem="gDk-Ol-Vkw" secondAttribute="centerX" id="87z-Xh-x8K"/>
+                <constraint firstItem="sLT-Ls-fgo" firstAttribute="top" secondItem="vDU-fB-kxQ" secondAttribute="bottom" constant="19.99" id="w1T-1s-HHZ"/>
+                <constraint firstItem="vDU-fB-kxQ" firstAttribute="centerY" secondItem="gDk-Ol-Vkw" secondAttribute="centerY" constant="-40" id="HE5-J2-Ozz"/>
+                <constraint firstItem="sLT-Ls-fgo" firstAttribute="centerX" secondItem="gDk-Ol-Vkw" secondAttribute="centerX" id="fPQ-oq-LOz"/>
+            </constraints>
+            <connections>
+                <outlet property="btnCopy" destination="2wo-o6-qDU" id="Lu3-EP-7Hk"/>
+                <outlet property="closeBtn" destination="sLT-Ls-fgo" id="uRK-dE-YaT"/>
+                <outlet property="wxLbl" destination="QdS-Yr-pYk" id="jTN-Qm-iC4"/>
+            </connections>
+            <point key="canvasLocation" x="-65" y="-513"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="divTokenJihuahuankuan" width="295" height="296.5"/>
+        <image name="window_yrJihuajineYitixian" width="27" height="27"/>
+    </resources>
+</document>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="p8A-wO-4pN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1ZH-ro-BDW">
+            <objects>
+                <viewController id="p8A-wO-4pN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQs-5t-EGS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baocunSilderCircle" translatesAutoresizingMaskIntoConstraints="NO" id="ZyC-Kl-WxY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Tbx-8C-z32"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Tbx-8C-z32" firstAttribute="trailing" secondItem="ZyC-Kl-WxY" secondAttribute="trailing" id="5cM-Es-2sE"/>
+                            <constraint firstAttribute="bottom" secondItem="ZyC-Kl-WxY" secondAttribute="bottom" id="16p-j7-FOa"/>
+                            <constraint firstItem="ZyC-Kl-WxY" firstAttribute="leading" secondItem="Tbx-8C-z32" secondAttribute="leading" id="0Nq-Bk-BHc"/>
+                            <constraint firstItem="ZyC-Kl-WxY" firstAttribute="top" secondItem="WQs-5t-EGS" secondAttribute="top" id="veC-Je-f7T"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9k-lD-hSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baocunSilderCircle" width="375" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
