@@ -1,7 +1,6 @@
 
 #import "xxzInsiToastView.h"
 #import "xxzSettingController.h"
-#import "xxzOginEmptyController.h"
 
 @implementation xxzInsiToastView
 

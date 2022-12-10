@@ -195,7 +195,6 @@
 		6F08C0C528C0B6E20094A7C7 /* xxzEtworkingConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F08C0C428C0B6E20094A7C7 /* xxzEtworkingConfig.m */; };
 		6F08C0CA28C0B9C30094A7C7 /* xxzNewsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F08C0C728C0B9C30094A7C7 /* xxzNewsView.xib */; };
 		6F08C0CB28C0B9C30094A7C7 /* xxzNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F08C0C828C0B9C30094A7C7 /* xxzNewsView.m */; };
-		6F0E6C9229372AF400F93069 /* xxzInsiInstitutionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F0E6C9129372AF400F93069 /* xxzInsiInstitutionView.xib */; };
 		6F11431728DAB0FE002E271D /* xxzTabbarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F11431528DAB0FE002E271D /* xxzTabbarView.xib */; };
 		6F11431828DAB0FE002E271D /* xxzTabbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F11431628DAB0FE002E271D /* xxzTabbarView.m */; };
 		6F1762FB290F6949008206EA /* xxzRticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1762E2290F6949008206EA /* xxzRticle.m */; };
@@ -335,6 +334,7 @@
 		6FF32A9328C1918400BEDB48 /* xxzOurseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF32A8F28C1918300BEDB48 /* xxzOurseView.xib */; };
 		6FF32A9428C1918400BEDB48 /* xxzListHandlerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF32A9128C1918300BEDB48 /* xxzListHandlerController.m */; };
 		B01AC369E8626111C559E8A1 /* libPods-LemonFish.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D40C5C612DD7B6D4EA50B2A4 /* libPods-LemonFish.a */; };
+		BB4A07C5293792300015081D /* xxzInsiInstitutionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB4A07C4293792300015081D /* xxzInsiInstitutionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -663,7 +663,6 @@
 		6F08C0C728C0B9C30094A7C7 /* xxzNewsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xxzNewsView.xib; sourceTree = "<group>"; };
 		6F08C0C828C0B9C30094A7C7 /* xxzNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xxzNewsView.m; sourceTree = "<group>"; };
 		6F08C0C928C0B9C30094A7C7 /* xxzNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxzNewsView.h; sourceTree = "<group>"; };
-		6F0E6C9129372AF400F93069 /* xxzInsiInstitutionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = xxzInsiInstitutionView.xib; path = ../../../../../../../../../xxzInsiInstitutionView.xib; sourceTree = "<group>"; };
 		6F11431428DAB0FE002E271D /* xxzTabbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxzTabbarView.h; sourceTree = "<group>"; };
 		6F11431528DAB0FE002E271D /* xxzTabbarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xxzTabbarView.xib; sourceTree = "<group>"; };
 		6F11431628DAB0FE002E271D /* xxzTabbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xxzTabbarView.m; sourceTree = "<group>"; };
@@ -909,6 +908,7 @@
 		6FF32A8F28C1918300BEDB48 /* xxzOurseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xxzOurseView.xib; sourceTree = "<group>"; };
 		6FF32A9028C1918300BEDB48 /* xxzOurseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xxzOurseView.h; sourceTree = "<group>"; };
 		6FF32A9128C1918300BEDB48 /* xxzListHandlerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = xxzListHandlerController.m; sourceTree = "<group>"; };
+		BB4A07C4293792300015081D /* xxzInsiInstitutionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = xxzInsiInstitutionView.xib; sourceTree = "<group>"; };
 		D40C5C612DD7B6D4EA50B2A4 /* libPods-LemonFish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LemonFish.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1436,7 +1436,7 @@
 		049EB44828C23D0A008F9086 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				6F0E6C9129372AF400F93069 /* xxzInsiInstitutionView.xib */,
+				BB4A07C4293792300015081D /* xxzInsiInstitutionView.xib */,
 				049EB44A28C23D0A008F9086 /* xxzInsiInstitutionView.m */,
 				049EB44B28C23D0A008F9086 /* xxzInsiInstitutionView.h */,
 				04E5B94A28C2F82100B50A18 /* xxzXplainAlendarCell.h */,
@@ -2430,7 +2430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0433C6DD28C44F2B00DE76EA /* xxzUpdateView.xib in Resources */,
-				6F0E6C9229372AF400F93069 /* xxzInsiInstitutionView.xib in Resources */,
+				BB4A07C5293792300015081D /* xxzInsiInstitutionView.xib in Resources */,
 				6FC1B800290A99750050DFE1 /* xxzNlineScreenView.xib in Resources */,
 				6F830E5828D1B06900736D07 /* xxzInsiToastView.xib in Resources */,
 				6F0676C528C99ACE0096E495 /* xxzFriendsFriendsView.xib in Resources */,
@@ -3019,7 +3019,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5.0;
+				MARKETING_VERSION = 2.7.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -3145,7 +3145,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5.0;
+				MARKETING_VERSION = 2.7.0;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

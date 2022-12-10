@@ -36,7 +36,10 @@
     [self.mc_tableview removeFromSuperview];
     [self saveAction];
     [self getVersionData];
-    [self addCount];
+    if(self.currentId){
+        [self addCount];
+
+    }
     
     self.codeTop.constant = kScreenHeight * 170/926;
     NSLog(@"%f",kScreenHeight * 170/926);
